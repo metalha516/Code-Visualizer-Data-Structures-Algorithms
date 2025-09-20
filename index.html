@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Visualizer - Data Structures & Algorithms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h2 class="panel-title">Code Input</h2>
+            <textarea 
+                class="code-input" 
+                id="codeInput" 
+                placeholder="Enter your code here..."
+            >
+</textarea>
+            
+            <div class="controls">
+                <button class="btn btn-primary" id="visualizeBtn">Visualize Code</button>
+                <button class="btn btn-secondary" id="stepBtn">Step Through</button>
+                <button class="btn btn-success" id="clearBtn">Clear All</button>
+            </div>
+
+            <div class="execution-info" id="executionInfo">
+                <div class="current-line">Ready to visualize your code!</div>
+                <div class="variables-list" id="variablesList">
+                    Click "Visualize Code" to start...
+                </div>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <h2 class="panel-title">Code Visualization</h2>
+            <div class="visualization-area" id="visualizationArea">
+                <div style="text-align: center; color: #ffffff; margin-top: 200px; font-size: 18px;">
+                    🎯 Your data structures will appear here
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+       
+</body>
+</html>
